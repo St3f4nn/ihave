@@ -423,6 +423,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -468,6 +473,48 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
 .debug-screens::before {
   position: fixed;
   z-index: 2147483647;
@@ -507,26 +554,77 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1440px) {
   .debug-screens::before {
     content: 'screen: 2xl';
   }
+}
+
+@media (min-width: 1920px) {
+  .debug-screens::before {
+    content: 'screen: 3xl';
+  }
+}
+
+.container {
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 672px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1056px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1312px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1472px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1669px;
+  }
+}
+
+.h-40 {
+  height: 10rem;
 }
 
 .scroll-smooth {
   scroll-behavior: smooth;
 }
 
-.bg-green-500 {
+.bg-slate-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.p-8 {
-  padding: 2rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
