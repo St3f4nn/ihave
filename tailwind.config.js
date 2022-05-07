@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    "./dist/*.html"
+    "./dist/*.html",
+    "./dist/js/*.js",
   ],
   theme: {
     screens: {
@@ -18,6 +19,69 @@ module.exports = {
       fontFamily: {
         'roboto': "'Roboto', sans-serif",
         'oswald': "'Oswald', sans-serif"
+      },
+      letterSpacing: {
+        '0.72': '0.72px',
+        '1.44': '1.44px'
+      },
+      lineHeight: {
+        6.75: '27px',
+        7.25: '29px',
+        10.25: '41px',
+        18.5: '74px',
+        23.5: '94px'
+      },
+      colors: {
+        '656565': '#656565',
+        'dfe3eb': '#dfe3eb',
+        '231f20': '#231f20',
+        'ff9300': '#ff9300',
+        '9c9c9c': '#9c9c9c',
+        '4b4b4b': '#4b4b4b',
+        'db6e00': '#db6e00',
+        'ebeff7': '#ebeff7'
+      },
+      spacing: {
+        0.11: '0.44px',
+        0.25: '1px',
+        0.5: '2px',
+        1.0425: '4.17px',
+        1.57: '6.28px',
+        2.095: '8.38px',
+        2.1625: '8.65px',
+        3.5: '14px',
+        4.25: '17px',
+        8.1175: '32.47px',
+        8.125: '32.5px',
+        8.445: '33.78px',
+        9.055: '36.22px',
+        9.5: '38px',
+        12.25: '49px',
+        12.5: '50px',
+        13: '52px',
+        42.5: '170px',
+        45.25: '181px',
+        48.5: '194px',
+        49.89: '199.56px',
+        52.5: '210px',
+        96.75: '387px'
+      },
+      fontSize: {
+        '28': '28px',
+        '50': '50px',
+        '64': '64px'
+      },
+      boxShadow: {
+        'cta-buy': '0px 2px 4px #00000029',
+        'cta-add': '0px 2px 6px #00000029'
+      },
+      maxWidth: {
+        130.5: '522px',
+        105: '420px',
+        156: '624px'
+      },
+      backgroundImage: {
+        'hero-background': 'linear-gradient(90deg, rgba(223,227,235,1) 30%, rgba(235,239,247,1) 30%)'
       }
     },
   },

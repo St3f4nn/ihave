@@ -6,4 +6,28 @@
     .container {
         @apply px-4;
     }
+
+    .hero-nav-menu-link-el {
+        @apply font-roboto font-medium text-lg tracking-0.72 leading-6.75 text-656565 hover:text-slate-800 transition-all;
+    }
+
+    .section-text {
+        @apply font-roboto font-normal text-lg leading-6.75 text-656565;
+    }
+
+    .price {
+        @apply font-oswald font-extralight text-50 leading-18.5 text-ff9300;
+    }
+
+    .cta {
+        @apply py-4 rounded-lg sm:w-max font-roboto font-bold text-xl sm:text-2xl leading-7.25 tracking-1.44 cursor-pointer hover:text-white hover:bg-db6e00 transition-all border-2 border-solid border-ff9300 hover:border-db6e00 w-full text-center;
+    }
+
+    .hero-content-4-img {
+        @apply transition-all cursor-pointer hover:-translate-x-1;
+    }
+}
+
+#hero-nav-functions-shopping-cart-amount.active {
+    display: flex;
 }
