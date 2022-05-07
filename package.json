@@ -1,0 +1,25 @@
+{
+  "name": "ihave",
+  "version": "1.0.0",
+  "description": "Large-size earmuffs that could cover the whole ears, paired with thick, soft earmuffscan make it comfortable to immerse in music for a long time.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/css/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/St3f4nn/ihave.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/St3f4nn/ihave/issues"
+  },
+  "homepage": "https://github.com/St3f4nn/ihave#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24",
+    "tailwindcss-debug-screens": "^2.2.1"
+  }
+}
