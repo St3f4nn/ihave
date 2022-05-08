@@ -20,11 +20,19 @@
     }
 
     .cta {
-        @apply py-4 rounded-lg sm:w-max font-roboto font-bold text-xl sm:text-2xl leading-7.25 tracking-1.44 cursor-pointer hover:text-white hover:bg-db6e00 transition-all border-2 border-solid border-ff9300 hover:border-db6e00 w-full text-center;
+        @apply py-3.5 rounded-lg sm:w-max font-roboto font-bold text-xl sm:text-2xl leading-7.25 tracking-1.44 cursor-pointer hover:text-white hover:bg-db6e00 transition-all border-2 border-solid border-ff9300 hover:border-db6e00 w-full text-center;
     }
 
     .hero-content-4-img {
         @apply transition-all cursor-pointer hover:-translate-x-1;
+    }
+
+    .about-headline-heading {
+        @apply font-oswald font-medium text-lg sm:text-2xl sm:leading-6.75 sm:tracking-0.96 text-black cursor-pointer;
+    }
+
+    .section-text {
+        @apply font-roboto font-normal text-base sm:text-lg leading-6.75 text-656565 max-w-144.5 sm:text-left text-center;
     }
 }
 

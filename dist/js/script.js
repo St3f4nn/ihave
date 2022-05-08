@@ -2,8 +2,6 @@
 
 // Elements
 
-const htmlBody = document.querySelector('body');
-
 const heroNavBar = document.querySelector('#hero-nav');
 const heroNavMenu = document.querySelector('#hero-nav-menu');
 const heroNavBurger = document.querySelector('#hero-nav-functions-burger');
@@ -44,17 +42,10 @@ window.onscroll = () => {
 
 heroNavBurger.addEventListener('click', () => {
     heroNavMenu.classList.add('w-full');
-
-    let screenWidth = screen.width;
-
-    if (screenWidth < 1024) {
-        htmlBody.style.overflowY = 'hidden';
-    };
 });
 
 heroNavCloseBtn.addEventListener('click', () => {
     heroNavMenu.classList.remove('w-full');
-    htmlBody.style.overflowY = 'visible';
 });
 
 productDecrement.addEventListener('click', () => {
