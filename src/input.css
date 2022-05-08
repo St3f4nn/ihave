@@ -34,6 +34,22 @@
     .section-heading {
         @apply text-4xl font-medium text-black font-oswald lg:text-50;
     }
+
+    .products-container-product {
+        @apply flex flex-col items-center;
+    }
+
+    .products-container-product-img {
+        @apply transition-all cursor-pointer hover:scale-110;
+    }
+
+    .products-container-product-name {
+        @apply font-oswald font-medium text-3xl lg:text-2xl xl:text-3xl 3xl:text-4xl leading-13.25 text-black mt-6 text-center;
+    }
+
+    .products-container-product-price {
+        @apply mt-4;
+    }
 }
 
 #hero-nav-functions-shopping-cart-amount.active {
