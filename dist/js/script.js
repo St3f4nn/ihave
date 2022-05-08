@@ -14,7 +14,10 @@ const productNumber = document.querySelector('.product-number');
 let productCounter = Number(productNumber.textContent);
 
 const addToCartBtn = document.querySelector('#hero-content-3-cta-add');
+const addToCartBtn2 = document.querySelector('#marketing-content-3-cta-add');
 const cartProductAmount = document.querySelector('#hero-nav-functions-shopping-cart-amount');
+
+let cartProductCounter = Number(cartProductAmount.textContent);
 
 // Functions
 
@@ -36,6 +39,12 @@ window.onscroll = () => {
     } else {
         heroNavBarStatic();
     };
+};
+
+const addProductToCart = () => {
+    cartProductAmount.classList.add('active');
+    cartProductCounter++;
+    cartProductAmount.textContent = cartProductCounter;
 };
 
 // Event listeners
@@ -62,10 +71,5 @@ productIncrement.addEventListener('click', () => {
     productNumber.textContent = productCounter;
 });
 
-addToCartBtn.addEventListener('click', () => {
-    cartProductAmount.classList.add('active');
-    
-    let cartProductCounter = Number(cartProductAmount.textContent);
-    cartProductCounter++;
-    cartProductAmount.textContent = cartProductCounter;
-});
+addToCartBtn.addEventListener('click', addProductToCart);
+addToCartBtn2.addEventListener('click', addProductToCart);
