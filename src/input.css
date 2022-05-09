@@ -50,8 +50,28 @@
     .products-container-product-price {
         @apply mt-4;
     }
+
+    .form-control {
+        @apply flex justify-center sm:justify-start;
+    }
+
+    .form-control label {
+        @apply font-roboto font-medium text-base sm:text-lg sm:leading-5.5 text-656565 text-center sm:text-left;
+    }
+
+    .form-control input {
+        @apply h-12.5 px-2 mt-1 bg-transparent border border-solid border-939fb8 rounded-4 w-4/5 sm:w-98.5 font-roboto hover:border-231f20 transition-all outline-none focus:border-231f20;
+    }
+
+    .form-control textarea {
+        @apply px-2 pt-2 mt-1 bg-transparent border border-solid border-939fb8 rounded-4 w-4/5 sm:w-98.5 font-roboto min-h-40.5 hover:border-231f20 transition-all outline-none focus:border-231f20;
+    }
 }
 
 #hero-nav-functions-shopping-cart-amount.active {
     display: flex;
+}
+
+#phone::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
