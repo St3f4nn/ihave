@@ -66,6 +66,22 @@
     .form-control textarea {
         @apply px-2 pt-2 mt-1 bg-transparent border border-solid border-939fb8 rounded-4 w-4/5 sm:w-98.5 font-roboto min-h-40.5 hover:border-231f20 transition-all outline-none focus:border-231f20;
     }
+
+    .footer-heading {
+        @apply font-roboto font-medium text-lg leading-5.5 text-656565;
+    }
+
+    .footer-component {
+        @apply font-roboto font-normal text-lg leading-5.5 text-656565 mt-4;
+    }
+
+    .footer-left-2-link-el, .footer-right-1-link-el {
+        @apply transition-all hover:text-slate-800;
+    }
+
+    .footer-right-2-social-icon {
+        @apply transition-all cursor-pointer hover:translate-y-1;
+    }
 }
 
 #hero-nav-functions-shopping-cart-amount.active {
